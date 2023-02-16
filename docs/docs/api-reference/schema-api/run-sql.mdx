@@ -228,7 +228,7 @@ columns.
 
 ### Some examples
 
-An SQL query returning results.
+A SQL query returning results.
 
 ```http
 POST /v2/query HTTP/1.1
@@ -267,7 +267,7 @@ Content-Type: application/json
 }
 ```
 
-An SQL query to create a table:
+A SQL query to create a table:
 
 ```http
 POST /v2/query HTTP/1.1
@@ -293,3 +293,5 @@ Content-Type: application/json
   "result": null
 }
 ```
+
+Please note: Tables created using the 'run_sql' via /v2/query will not be auto-tracked in the Hasura dashboard, you must navigate to the dashboard and click on "Track" table to display it in the tree.
